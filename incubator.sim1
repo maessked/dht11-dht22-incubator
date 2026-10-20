@@ -1,0 +1,149 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000000000" stepsPS="1" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Subcircuit" CircId="Nano-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-32,-340" rotation="0" hflip="1" vflip="1" label="Nano-1" idLabPos="14.7059,-15.098" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="m328 TQFP-269" Frequency="16 MHz" Program="../../../../AppData/Local/arduino/sketches/7C0B6E6C35ACAFCB7FF43404591E8DB3/dht22_test.ino.hex" Auto_Load="true" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Hd44780" CircId="Hd44780-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-148,-360" rotation="0" hflip="1" vflip="1" label="Hd44780-2" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" />
+
+<item itemtype="Dht22" CircId="Dht22-3" mainComp="false" Show_id="false" Show_Val="false" Pos="156,-180" rotation="0" hflip="1" vflip="1" label="Dht22-3" idLabPos="-28,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" DHT22="DHT22" TempInc="0.5 °C" HumiInc="0.5 _%" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-192,-308" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="DcMotor" CircId="DcMotor-15" mainComp="false" Show_id="true" Show_Val="false" Pos="360,-336" rotation="0" hflip="1" vflip="1" label="DEHUMIFIER" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-18" mainComp="false" Show_id="true" Show_Val="false" Pos="364,-432" rotation="0" hflip="1" vflip="1" label="ROTOR_CW" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="100 _RPM" Volt_Nominal="12 V" Resistance="100 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-24" mainComp="false" Show_id="true" Show_Val="false" Pos="368,-260" rotation="0" hflip="1" vflip="1" label="HUMIFIER" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="100 _RPM" Volt_Nominal="12 V" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-26" mainComp="false" Show_id="false" Show_Val="false" Pos="404,-172" rotation="0" hflip="1" vflip="1" label="Ground-26" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="DcMotor" CircId="DcMotor-29" mainComp="false" Show_id="true" Show_Val="false" Pos="360,-512" rotation="0" hflip="1" vflip="1" label="ROTOR_CCW" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="100 _RPM" Volt_Nominal="12 V" Resistance="100 Ω" />
+
+<item itemtype="Oscope" CircId="Oscope-31" mainComp="false" Show_id="false" Show_Val="false" Pos="8,-72" rotation="0" hflip="1" vflip="1" label="Oscope-31" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="1000000000" TimPos="0,0,0,0," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Mosfet" CircId="Mosfet-33" mainComp="false" Show_id="false" Show_Val="false" Pos="-164,-156" rotation="0" hflip="-1" vflip="1" label="Mosfet-33" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" P_Channel="false" Depletion="false" RDSon="1 Ω" Threshold="3 V" />
+
+<item itemtype="DcMotor" CircId="DcMotor-34" mainComp="false" Show_id="true" Show_Val="false" Pos="-220,-244" rotation="0" hflip="1" vflip="1" label="HEATER_SIMULATION" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="12 V" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-35" mainComp="false" Show_id="false" Show_Val="false" Pos="-172,-80" rotation="0" hflip="1" vflip="1" label="Ground-35" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-37" mainComp="false" Show_id="false" Show_Val="false" Pos="-308,-244" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-37" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="12 V" Out="true" />
+
+<item itemtype="RelaySPST" CircId="RelaySPST-38" mainComp="false" Show_id="false" Show_Val="false" Pos="204,-424" rotation="0" hflip="1" vflip="1" label="RelaySPST-38" idLabPos="-16,8" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1" IOn="20 mA" IOff="10 mA" Inductance="100 mH" Rcoil="100 Ω" ReaStep="0 ns" />
+
+<item itemtype="RelaySPST" CircId="RelaySPST-39" mainComp="false" Show_id="false" Show_Val="false" Pos="208,-336" rotation="0" hflip="1" vflip="1" label="RelaySPST-39" idLabPos="-16,8" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1" IOn="20 mA" IOff="10 mA" Inductance="100 mH" Rcoil="100 Ω" ReaStep="0 ns" />
+
+<item itemtype="RelaySPST" CircId="RelaySPST-40" mainComp="false" Show_id="false" Show_Val="false" Pos="252,-244" rotation="0" hflip="1" vflip="1" label="RelaySPST-40" idLabPos="-16,8" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1" IOn="20 mA" IOff="10 mA" Inductance="100 mH" Rcoil="100 Ω" ReaStep="0 ns" />
+
+<item itemtype="Ground" CircId="Ground-41" mainComp="false" Show_id="false" Show_Val="false" Pos="292,-220" rotation="0" hflip="1" vflip="1" label="Ground-41" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-42" mainComp="false" Show_id="false" Show_Val="false" Pos="248,-316" rotation="0" hflip="1" vflip="1" label="Ground-42" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-43" mainComp="false" Show_id="false" Show_Val="false" Pos="240,-404" rotation="0" hflip="1" vflip="1" label="Ground-43" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-44" mainComp="false" Show_id="false" Show_Val="false" Pos="136,-440" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-44" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="12 V" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-45" mainComp="false" Show_id="false" Show_Val="false" Pos="156,-352" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-45" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="12 V" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-46" mainComp="false" Show_id="false" Show_Val="false" Pos="204,-260" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-46" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="12 V" Out="true" />
+
+<item itemtype="Node" CircId="Node-5" mainComp="false" Pos="-92,-336" />
+
+<item itemtype="Node" CircId="Node-6" mainComp="false" Pos="-100,-336" />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-108,-336" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-124,-336" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="460,-336" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="460,-260" />
+
+<item itemtype="Node" CircId="Node-30" mainComp="false" Pos="460,-432" />
+
+<item itemtype="Node" CircId="Node-36" mainComp="false" Pos="-104,-156" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Hd44780-2-dataPin7" endpinid="Nano-1-7" pointList="-52,-352,-52,-252,-24,-252" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Hd44780-2-dataPin6" endpinid="Nano-1-6" pointList="-60,-352,-60,-260,-24,-260" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Hd44780-2-dataPin5" endpinid="Nano-1-5" pointList="-68,-352,-68,-268,-24,-268" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Hd44780-2-dataPin4" endpinid="Nano-1-4" pointList="-76,-352,-76,-276,-24,-276" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Hd44780-2-dataPin2" endpinid="Node-5-1" pointList="-92,-352,-92,-336" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Node-5-2" endpinid="Hd44780-2-dataPin3" pointList="-92,-336,-84,-336,-84,-352" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Hd44780-2-dataPin1" endpinid="Node-6-1" pointList="-100,-352,-100,-336" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Node-6-2" endpinid="Node-5-0" pointList="-100,-336,-92,-336" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Hd44780-2-dataPin0" endpinid="Node-7-0" pointList="-108,-352,-108,-336" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Node-7-2" endpinid="Node-6-0" pointList="-108,-336,-100,-336" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-10-1" endpinid="Ground-9-Gnd" pointList="-124,-336,-192,-336,-192,-324" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Hd44780-2-PinRW" endpinid="Node-10-0" pointList="-124,-352,-124,-336" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Node-10-2" endpinid="Node-7-1" pointList="-124,-336,-108,-336" />
+
+<item itemtype="Connector" uid="Connector-61" startpinid="Hd44780-2-PinEn" endpinid="Nano-1-1" pointList="-116,-352,-116,-324,-24,-324" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="Hd44780-2-PinRS" endpinid="Nano-1-0" pointList="-132,-352,-132,-316,-24,-316" />
+
+<item itemtype="Connector" uid="Connector-96" startpinid="Nano-1-A0" endpinid="Dht22-3-inPin" pointList="24,-236,84,-236,84,-184,120,-184" />
+
+<item itemtype="Connector" uid="Connector-101" startpinid="DcMotor-15-rPin" endpinid="Node-27-1" pointList="400,-336,460,-336" />
+
+<item itemtype="Connector" uid="Connector-104" startpinid="DcMotor-24-rPin" endpinid="Node-28-1" pointList="408,-260,460,-260" />
+
+<item itemtype="Connector" uid="Connector-105" startpinid="Node-27-2" endpinid="Node-28-0" pointList="460,-336,460,-260" />
+
+<item itemtype="Connector" uid="Connector-106" startpinid="Node-28-2" endpinid="Ground-26-Gnd" pointList="460,-260,460,-188,404,-188" />
+
+<item itemtype="Connector" uid="Connector-108" startpinid="DcMotor-29-rPin" endpinid="Node-30-1" pointList="400,-512,460,-512,460,-432" />
+
+<item itemtype="Connector" uid="Connector-109" startpinid="DcMotor-18-rPin" endpinid="Node-30-0" pointList="404,-432,460,-432" />
+
+<item itemtype="Connector" uid="Connector-110" startpinid="Node-30-2" endpinid="Node-27-0" pointList="460,-432,460,-336" />
+
+<item itemtype="Connector" uid="Connector-115" startpinid="DcMotor-34-rPin" endpinid="Mosfet-33-Dren" pointList="-180,-244,-172,-244,-172,-172" />
+
+<item itemtype="Connector" uid="Connector-116" startpinid="Mosfet-33-Sour" endpinid="Ground-35-Gnd" pointList="-172,-140,-172,-96" />
+
+<item itemtype="Connector" uid="Connector-117" startpinid="Mosfet-33-Gate" endpinid="Node-36-1" pointList="-148,-156,-104,-156" />
+
+<item itemtype="Connector" uid="Connector-119" startpinid="Node-36-2" endpinid="Nano-1-3" pointList="-104,-156,-104,-284,-24,-284" />
+
+<item itemtype="Connector" uid="Connector-120" startpinid="Fixed Voltage-37-outnod" endpinid="DcMotor-34-lPin" pointList="-292,-244,-260,-244" />
+
+<item itemtype="Connector" uid="Connector-121" startpinid="Oscope-31-Pin0" endpinid="Node-36-0" pointList="-80,-120,-104,-120,-104,-156" />
+
+<item itemtype="Connector" uid="Connector-122" startpinid="DcMotor-24-lPin" endpinid="RelaySPST-40-switch0pinN" pointList="328,-260,268,-260" />
+
+<item itemtype="Connector" uid="Connector-123" startpinid="DcMotor-18-lPin" endpinid="RelaySPST-39-switch0pinN" pointList="324,-432,284,-432,284,-352,224,-352" />
+
+<item itemtype="Connector" uid="Connector-124" startpinid="DcMotor-29-lPin" endpinid="RelaySPST-38-switch0pinN" pointList="320,-512,244,-512,244,-440,220,-440" />
+
+<item itemtype="Connector" uid="Connector-125" startpinid="RelaySPST-38-inductor-rPin" endpinid="Ground-43-Gnd" pointList="220,-424,240,-424,240,-420" />
+
+<item itemtype="Connector" uid="Connector-126" startpinid="RelaySPST-39-inductor-rPin" endpinid="Ground-42-Gnd" pointList="224,-336,248,-336,248,-332" />
+
+<item itemtype="Connector" uid="Connector-127" startpinid="RelaySPST-40-inductor-rPin" endpinid="Ground-41-Gnd" pointList="268,-244,292,-244,292,-236" />
+
+<item itemtype="Connector" uid="Connector-129" startpinid="Nano-1-A1" endpinid="RelaySPST-40-inductor-lPin" pointList="24,-244,236,-244" />
+
+<item itemtype="Connector" uid="Connector-130" startpinid="RelaySPST-39-inductor-lPin" endpinid="Nano-1-A3" pointList="192,-336,164,-336,164,-260,24,-260" />
+
+<item itemtype="Connector" uid="Connector-131" startpinid="RelaySPST-38-inductor-lPin" endpinid="Nano-1-A4" pointList="188,-424,104,-424,104,-268,24,-268" />
+
+<item itemtype="Connector" uid="Connector-132" startpinid="Fixed Voltage-44-outnod" endpinid="RelaySPST-38-pinP2" pointList="152,-440,188,-440" />
+
+<item itemtype="Connector" uid="Connector-133" startpinid="Fixed Voltage-45-outnod" endpinid="RelaySPST-39-pinP2" pointList="172,-352,192,-352" />
+
+<item itemtype="Connector" uid="Connector-134" startpinid="Fixed Voltage-46-outnod" endpinid="RelaySPST-40-pinP2" pointList="220,-260,236,-260" />
+
+</circuit>
